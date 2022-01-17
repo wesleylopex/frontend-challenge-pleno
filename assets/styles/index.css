@@ -1,0 +1,16 @@
+*, html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.gradient-banner-background {
+  background: rgb(2,0,36);
+  background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(27,217,205,1) 0%, rgba(149,47,242,1) 100%); 
+}

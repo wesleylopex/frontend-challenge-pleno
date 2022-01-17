@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - SiteDemo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="stylesheet" href="./assets/styles/tailwind/tailwind.css">
+  <link rel="stylesheet" href="./assets/styles/font-awesome/styles/all.min.css">
+  <link rel="stylesheet" href="./assets/scripts/plugins/swiper/swiper.min.css">
+</head>
+<body class="overflow-x-hidden bg-white">
+  <header>
+    <div class="wrapper">
+      <div id="logo-wrapper" class="lg:mr-10">
+        <a href="index.html" class="font-raleway font-thin text-2xl">
+          <span class="font-extrabold">Site</span>Demo
+        </a>
+      </div>
+      <div id="burger">
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <div class="flex lg:flex-row flex-col justify-between h-full lg:justify-center items-center">
+            <li class="active"><a href="#">Sobre</a></li>
+            <li><a href="#">Preços</a></li>
+            <li><a href="#">Desenvolvedores</a></li>
+          </div>
+          <div class="flex lg:flex-row flex-col justify-between h-full lg:justify-center items-center">
+            <li>
+              <a href="">
+                <i data-feather="search"></i>
+              </a>
+            </li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="button-item">
+              <a href="">
+                <button class="btn">Começar</button>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="banners-swiper" class="swiper-container top-0 left-0 w-screen h-screen">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide gradient-banner-background">
+        <div class="h-full">
+          <div class="w-full h-full flex flex-col items-center justify-center">
+            <h1 class="text-white font-bold text-4xl text-center">Recrie este Banner!</h1>
+            <p class="px-10 mx:px-0 text-sm md:text-base mt-6 text-white leading-relaxed text-center md:w-2/3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ipsum eget congue consectetur, nisl nunc euismod nisi, eu porttitor nisl nunc euismod nisi.
+              Sed euismod, ipsum eget congue consectetur, nisl nunc euismod nisi, eu porttitor nisl nunc euismod nisi.
+            </p>
+            <div class="mt-14 flex flex-wrap justify-center items-center">
+              <button class="my-2 md:my-0 px-8 py-3 rounded-md mx-2 btn btn--primary">Sobre o SiteDemo</button>
+              <button class="my-2 md:my-0 px-8 py-3 rounded-md mx-2 btn bg-transparent border border-white text-white">Começar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide grid place-items-center bg-cover bg-center bg-no-repeat" style="background: linear-gradient(rgba(0, 0, 0 , .6), rgba(0, 0, 0 , .6)), url(./assets/images/random/1920x1080.png)">
+        <div class="h-full">
+          <div class="w-full h-full flex flex-col items-center justify-center">
+            <h1 class="text-white font-bold text-4xl text-center">Banner com imagem ao fundo</h1>
+            <p class="px-10 mx:px-0 text-sm md:text-base mt-6 text-white leading-relaxed text-center md:w-2/3">
+              Banner com fundo escurecido para melhor visualização do texto. Sed euismod, ipsum eget congue consectetur, nisl nunc euismod nisi, eu porttitor nisl nunc euismod nisi.
+              Sed euismod, ipsum eget congue consectetur, nisl nunc euismod nisi, eu porttitor nisl nunc euismod nisi.
+            </p>
+            <div class="mt-14 flex flex-wrap justify-center items-center">
+              <button class="my-2 md:my-0 px-8 py-3 rounded-md mx-2 btn btn--primary">Sobre o SiteDemo</button>
+              <button class="my-2 md:my-0 px-8 py-3 rounded-md mx-2 btn bg-transparent border border-white text-white">Começar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="absolute top-1/2 z-50 transform translate-x-1/2 left-0 banner-swiper-button-prev grid place-items-center w-8 h-8 bg-white rounded-full"><i data-feather="chevron-left"></i></button>
+    <button class="absolute top-1/2 z-50 transform -translate-x-1/2 right-0 banner-swiper-button-next grid place-items-center w-8 h-8 bg-white rounded-full"><i data-feather="chevron-right"></i></button>
+  </section>
+
+  <section class="py-8 border-b border-gray-300 bg-white">
+    <div class="wrapper">
+      <div id="clients" class="flex flex-wrap justify-center md:justify-between items-center">
+        <img class="m-4 xl:m-0" src="./assets/images/sponsors/250x60.png" alt="Patrocinador 1">
+        <img class="m-4 xl:m-0" src="./assets/images/sponsors/250x60.png" alt="Patrocinador 2">
+        <img class="m-4 xl:m-0" src="./assets/images/sponsors/250x60.png" alt="Patrocinador 3">
+        <img class="m-4 xl:m-0" src="./assets/images/sponsors/250x60.png" alt="Patrocinador 4">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-28 px-6 border-b border-gray-300">
+    <div id="services" class="wrapper flex flex-wrap justify-center md:justify-between items-center">
+    </div>
+  </section>
+
+  <section class="py-12 md:py-20">
+    <div class="wrapper grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h2 class="text-dark text-3xl font-bold">Atendimento ao Cliente</h2>
+        <p class="leading-relaxed text-gray-400 mt-4 mb-8">Precisando entrar em contato, utilize nossos canais de atendimento ou consulte a documentação para mais informações.</p>
+        <div class="flex flex-wrap items-center">
+          <button class="btn bg-secondary px-8 py-4 rounded-md text-white font-semibold">Envie um Ticket</button>
+          <button class="mt-2 md:mt-0 md:ml-4 btn bg-primary px-8 py-4 rounded-md text-white font-semibold">Documentação</button>
+        </div>
+      </div>
+      <div class="md:grid place-items-center">
+        <img src="./assets/images/random/500x300.png" alt="Any image">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-20 bg-gray-900">
+    <div class="wrapper text-center">
+      <h2 class="text-white text-3xl font-bold">Newsletter</h2>
+      <p class="leading-relaxed text-gray-400 mt-4">Receba nossas informações por email e fique sabendo de todas as novidades</p>
+      <div class="mt-20 flex flex-col md:flex-row justify-center items-center">
+        <input type="text" placeholder="Seu e-mail" class="text-sm mx-2 w-full mb-2 md:mb-0 md:w-1/3 bg-transparent border border-gray-400 rounded-md py-3 px-4 outline-none text-gray-400">
+        <button class="outline-none text-sm mx-2 w-full md:w-auto btn border border-primary bg-primary py-3 px-8 rounded-md text-white font-semibold">Salvar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8">
+    <div class="wrapper flex flex-wrap justify-center md:justify-between items-center">
+      <a href="index.html" class="font-thin text-2xl">
+        <span class="font-black text-primary">Site</span>Demo
+      </a>
+      <ul class="flex flex-wrap justify-center items-center my-12 md:my-0">
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="#">Sobre</a>
+        </li>
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="#">Preços</a>
+        </li>
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="#">Desenvolvedores</a>
+        </li>
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="#">Ajuda</a>
+        </li>
+        <li>
+          <a class="mx-4 text-sm text-gray-400" href="#">Contato</a>
+        </li>
+      </ul>
+      <div>
+        <p class="text-black text-sm font-semibold">
+          +80 1234 56789 | ola@sitedemo.com.br
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/scripts/plugins/feather-icons/feather.min.js"></script>
+  <script src="./assets/scripts/plugins/swiper/swiper.min.js"></script>
+
+  <script type="module">
+    import { Utils } from './assets/scripts/Utils/Utils.js'
+
+    window.addEventListener('load', function () {
+      initUtils()
+      initBannersSwiper()
+      showServices()
+      showClients()
+    })
+
+    function initUtils () {
+      const utils = Utils()
+      utils.start()
+    }
+
+    function initBannersSwiper () {
+      const swiper = new Swiper('#banners-swiper', {
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: '#banner-swiper .banner-swiper-button-next',
+          prevEl: '#banner-swiper .banner-swiper-button-prev'
+        }
+      })
+    }
+
+    async function showServices () {
+      const services = await fetch('http://localhost:3000/services', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(response => response.json())
+
+      if (!services) return false
+
+      const servicesElement = document.querySelector('#services')
+
+      let newServices = ''
+
+      services.forEach((service, index) => {
+        const isEven = index % 2 === 0
+
+        newServices += `
+          <div data-id="${service.id}" class="m-4 md:m-0 service w-96 h-80 flex flex-col justify-center items-center text-center ${isEven ? 'text-white bg-primary shadow-lg' : 'text-dark bg-transparent'} rounded-sm p-6">
+            <i class="w-16 h-16 ${isEven ? '' : 'text-primary'}" data-feather="${service.image}"></i>
+            <h2 class="my-6 text-xl font-medium">${service.title}</h2>
+            <p class="text-center text-sm leading-8">${service.description}</p>
+          </div>
+        `
+      })
+
+      servicesElement.innerHTML = newServices
+      feather.replace()
+    }
+
+    async function showClients () {
+      const clients = await fetch('http://localhost:3000/clients', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(response => response.json())
+
+      if (!clients) return false
+
+      const clientsElement = document.querySelector('#clients')
+
+      let newClients = ''
+
+      clients.forEach(client => {
+        newClients += `
+          <a href="${client.link}" target="_blank">
+            <img class="m-4 xl:m-0" src="${client.image}" alt="${client.title}">
+          </a>
+        `
+      })
+
+      clientsElement.innerHTML = newClients
+      feather.replace()
+    }
+  </script>
+</body>
+</html>
